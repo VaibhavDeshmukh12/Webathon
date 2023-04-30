@@ -54,6 +54,10 @@ body {
     padding-bottom: 2.2rem;
     margin: .2rem;
 }
+.btn a{
+    color: #fff;
+    text-decoration: none;
+}
 .glow-on-hover:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
@@ -101,6 +105,7 @@ body {
     100% { background-position: 0 0; }
 }
 
+/*
 .login-box {
     position: absolute;
     top: 50%;
@@ -132,7 +137,7 @@ body {
     color: #fff;
     margin-bottom: 30px;
 }
-
+*/
 
 .navbar-toggler{
     background-color: #fff;
