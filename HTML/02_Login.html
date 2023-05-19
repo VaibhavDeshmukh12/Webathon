@@ -8,9 +8,40 @@
     <link rel="stylesheet" href="/CSS/02_login.css" />
     <link rel="stylesheet" href="/CSS/03_master.css">
     <title>Sign in & Sign up Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <h1 class="h1"><span>i</span><span>Educate</span></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active glow-on-hover" aria-current="page" href="/HTML/01_index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active glow-on-hover" aria-current="page"
+                            href="/HTML/04_about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active glow-on-hover" aria-current="page"
+                            href="/HTML/03_contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div>
+                    <button type="button" class="btn btn-outline-dark glow-on-hover">
+                        <a href="/HTML/02_Login.html">Log in</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
     <div class="container-simple">
         <div class="forms-container">
             <div class="signin-signup">
@@ -18,13 +49,13 @@
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" minlength="4" maxlength="8" required/>
+                        <input type="text" placeholder="Username" minlength="4" maxlength="8" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" minlength="4" maxlength="8" required/>
+                        <input type="password" placeholder="Password" minlength="4" maxlength="8" required />
                     </div>
-                    <input type="submit" value="Login" class="btn solid" />
+                    <input type="submit" value="Login" class="btn1 solid" />
                     <p class="social-text">Or Sign in with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -45,17 +76,17 @@
                     <h2 class="title">Sign up</h2>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" minlength="4" maxlength="8" required/>
+                        <input type="text" placeholder="Username" minlength="4" maxlength="8" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope"></i>
-                        <input type="email" placeholder="Email" required/>
+                        <input type="email" placeholder="Email" required />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" minlength="4" maxlength="8" required/>
+                        <input type="password" placeholder="Password" minlength="4" maxlength="8" required />
                     </div>
-                    <input type="submit" class="btn" value="Sign up" />
+                    <input type="submit" class="btn1" value="Sign up" />
                     <p class="social-text">Or Sign up with social platforms</p>
                     <div class="social-media">
                         <a href="#" class="social-icon">
@@ -83,7 +114,7 @@
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
                         ex ratione. Aliquid!
                     </p>
-                    <button class="btn transparent but-on" id="sign-up-btn">
+                    <button class="btn1 transparent but-on" id="sign-up-btn">
                         Sign up
                     </button>
                 </div>
@@ -95,7 +126,7 @@
                     <p>
                         Click below button to Sign in
                     </p>
-                    <button class="btn transparent" id="sign-in-btn">
+                    <button class="btn1 transparent" id="sign-in-btn">
                         Sign in
                     </button>
                 </div>

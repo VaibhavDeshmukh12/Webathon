@@ -135,7 +135,7 @@ input {
 
 .h1 {
     /* color: rgb(240, 3, 248) !important; */
-    color: hsl(0, 3%, 65%);
+    color: rgb(159, 146, 146) !important;
     font-size: 2.5rem;
     font-weight: bold;
     font-family: monospace;
@@ -286,7 +286,7 @@ form.sign-in-form {
     border-color: #4481eb;
 }
 
-.btn {
+.btn1 {
     width: 150px;
     /* background-color: #5995fd; */
     background-color: rgba(67, 130, 213, 1);
@@ -303,7 +303,7 @@ form.sign-in-form {
     transition: 0.5s;
 }
 
-.btn:hover {
+.btn1:hover {
     /* background-color: #4d84e2; */
     background-color: rgba(67, 130, 213, .8);
 }
@@ -377,7 +377,7 @@ form.sign-in-form {
     padding: 0.7rem 0;
 }
 
-.btn.transparent {
+.btn1.transparent {
     margin: 0;
     background: none;
     border: 2px solid #fff;
@@ -492,7 +492,7 @@ form.sign-in-form {
         padding: 0.5rem 0;
     }
 
-    .btn.transparent {
+    .btn1.transparent {
         width: 110px;
         height: 35px;
         font-size: 0.7rem;
