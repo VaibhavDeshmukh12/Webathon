@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/003b1b75fe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/03_master.css">
+    <link rel="stylesheet" href="/CSS/05_courses.css">
+    <style>
+        #myDiv {
+            display: none;
+        }
+
+        #butt {
+            display: block;
+        }
+
+        .form-control{
+            height: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container-fluid">
+            <h1 class="h1"><span>i</span><span>Educate</span></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active glow-on-hover" aria-current="page" href="/HTML/01_index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active glow-on-hover" aria-current="page"
+                            href="/HTML/04_about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active glow-on-hover" aria-current="page"
+                            href="/HTML/03_contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="mx-2 d-flex">
+                    <!-- <input class="px-2 mt-2" type="text" placeholder="Search Here..." style="border-radius:1rem; padding:0.4rem;  font-weight:bold; width:10rem;"> -->
+                    <form class="d-flex flex-row mt-1" role="search">
+                        <!-- <i class="bi bi-search text-light" style="filter: revert;"></i> -->
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+                    </form>
+                    <button type="button" class="btn btn-outline-dark glow-on-hover">
+                        <a href="/HTML/02_Login.html">Log in</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="course_cont container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course1.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">C Language</h5>
+                        <p class="card-text text-center">Learn the basics of C programming, including variables, data types, functions, control structures, and more.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 12 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 8 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course2.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">C++</h5>
+                        <p class="card-text text-center">Learn the basics of C++ programming,Object oriented concept, functions, and objects.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 10 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 6 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xl-4 col-12">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course3.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">Java</h5>
+                        <p class="card-text text-center">Learn Java, a popular object-oriented programming language, from scratch and Build your own applications.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 6 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 8 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course2.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">Python</h5>
+                        <p class="card-text text-center">Learn Python, a powerful and versatile programming language, from scratch in this comprehensive course.
+                        </p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 5 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 5 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course3.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">Web Development</h5>
+                        <p class="card-text text-center">Learn the basics of web development with this comprehensive course that covers HTML, CSS, and JavaScript.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 4 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 5 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course1.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">App Development</h5>
+                        <p class="card-text text-center">Learn the basics of app development and create your own mobile apps using the latest programming languages..</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 10 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 12 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course1.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">Card title</h5>
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up
+                            the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 3 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 2.5 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course2.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">Card title</h5>
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up
+                            the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 2 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 1.5 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                <div class="card" style="width: 20rem;">
+                    <img src="/images/course3.jpg" class="img-top" alt="...">
+                    <div class="card-body text-center">
+                        <div class="card-text">
+                            <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4" style="color: orange;"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <h5 class="card-title mt-2">Card title</h5>
+                        <p class="card-text text-center">Some quick example text to build on the card title and make up
+                            the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                        <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                            <span class="mt-2"><i class="fa-solid fa-book"></i> 8 Modules</span>
+                            <span class="mt-2"><i class="fa-solid fa-clock"></i> 9 Hourse</span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!--  -->
+        <div class="button mb-4 d-flex justify-content-center align-items-center">
+            <button class="btn btn-danger" id="butt" onclick="myFunction()">Load More</button>
+        </div>
+        <section id="myDiv">
+            <div class="row show-hide justify-content-center align-items-center">
+                <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course1.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">Advance Java</h5>
+                            <p class="card-text text-center">Learn advanced Java programming concepts and techniques, including object-oriented programming with hands-on projects.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 12 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 8 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course2.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">SQL</h5>
+                            <p class="card-text text-center">Learn SQL, the most popular database language, in this comprehensive course. Master the basics of SQL and learn how to query and manipulate data in a database.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 10 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 6 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 col-12">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course3.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">DSA</h5>
+                            <p class="card-text text-center">Learn the fundamentals of data structures and algorithms in this comprehensive online course.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 6 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 8 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course2.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">Cyber Security</h5>
+                            <p class="card-text text-center">Learn the essential programming languages for cybersecurity professionals, including Python, SQL, PHP, and JavaScript.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 5 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 5 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course3.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">JavaScript</h5>
+                            <p class="card-text text-center">Learn JavaScript, the world's most popular programming language, and create dynamic and interactive websites and web applications.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 4 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 5 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course1.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">Bootstrap</h5>
+                            <p class="card-text text-center">Learn Bootstrap, the popular front-end framework, and build responsive, mobile-first websites.
+                            </p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 10 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 12 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course1.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">Card title</h5>
+                            <p class="card-text text-center">Some quick example text to build on the card title and make
+                                up
+                                the bulk of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 3 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 2.5 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course2.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">Card title</h5>
+                            <p class="card-text text-center">Some quick example text to build on the card title and make
+                                up
+                                the bulk of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 2 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 1.5 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-12 col-xl-4 my-5">
+                    <div class="card" style="width: 20rem;">
+                        <img src="/images/course3.jpg" class="img-top" alt="...">
+                        <div class="card-body text-center">
+                            <div class="card-text">
+                                <ul class="card-text d-flex justify-content-center align-items-center list-unstyled">
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-solid fa-star fs-4" style="color:orange;"></i></li>
+                                    <li><i class="fa-sharp fa-regular fa-star-half-stroke fs-4"
+                                            style="color: orange;"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h5 class="card-title mt-2">Card title</h5>
+                            <p class="card-text text-center">Some quick example text to build on the card title and make
+                                up
+                                the bulk of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                            <div class="d-flex justify-content-between mt-2" style="border-top: 2px solid gray;">
+                                <span class="mt-2"><i class="fa-solid fa-book"></i> 8 Modules</span>
+                                <span class="mt-2"><i class="fa-solid fa-clock"></i> 9 Hourse</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+        <div class="footer text-light" style="background:#2e3267;">
+            <p style="text-align: justify;" class="d-flex justify-content-center align-items-center flex-column">
+                Copywrite &copy;2023 All rights reserverd by:
+                <a href="#" style="text-decoration: none;">
+                    <strong class="text-warning">The iEducate</a></strong>
+            </p>
+        </div>
+    </section>
+    <script>
+        function myFunction() {
+            var button = document.getElementById("butt");
+            var tog = document.getElementById("myDiv");
+            if (tog.style.display === "none") {
+                tog.style.display = "block";
+            }
+            else {
+                tog.style.display = "none";
+                button.style.display = "none";
+            }
+
+            if (butt.style.display === "block") {
+                butt.style.display = "none";
+            }
+            else {
+                butt.style.display = "block";
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

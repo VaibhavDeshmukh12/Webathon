@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dosis:wght@700;800&family=Foldit&family=Heebo:wght@800&family=Montserrat:wght@100&family=Phudu:wght@500&family=Roboto+Slab&family=Roboto:wght@300&family=Tilt+Warp&family=Ubuntu:ital,wght@0,500;1,400;1,500&display=swap');
+
 html,
 body {
     scroll-behavior: smooth;
@@ -6,9 +8,13 @@ body {
     padding: 0;
     width: 100%;
     height: 100vh;
-    /* background: rgb(5, 5, 5); */
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* background:black; */
     /* background: linear-gradient(#141e30, #243b55); */
     background-color: #1f2641;
+    /* background: linear-gradient(to top,#833850,#1D2671); */
+    /* background:linear-gradient(#242582,#553D67,#F64C72,#99738E,#2F2FA2); */
 }
 
 :root {
@@ -45,9 +51,9 @@ body {
 
 .nav-item a {
     margin: .3rem;
-    margin-left: 1.2rem;
+    margin-left: 1rem;
     font-size: 1.2rem;
-    padding-bottom: 2.2rem;
+    padding-bottom: 40px;
 }
 
 .glow-on-hover {
@@ -145,46 +151,9 @@ body {
     }
 }
 
-/*
-.login-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .5);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-    border-radius: 10px;
-}
-
-.login-box h2 {
-    margin: 0 0 30px;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-}
-
-.login-box .user-box {
-    position: relative;
-}
-
-.login-box .user-box input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 30px;
-}
-*/
 
 .navbar-toggler {
     background-color: #fff;
-}
-
-.mx-2 {
-    margin-left: 1.2rem !important;
 }
 
 
@@ -320,7 +289,8 @@ header {
     overflow: hidden;
     background: var(--color-bg1);
     /* box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12); */
-    box-shadow: 0 0 29px 0 rgba(169, 179, 207, 0.12);
+    box-shadow: 5px 5px 20px black;
+    /* box-shadow: 0 0 29px 0 rgba(169, 179, 207, 0.12); */
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
@@ -392,7 +362,7 @@ header {
 }
 
 .box1 {
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
     padding-bottom: 2.4rem;
 }
 
@@ -418,7 +388,7 @@ header {
 .cat-right .card p {
     padding-top: .2rem;
     padding-left: .5rem;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 
 .cat-right .card {
@@ -437,15 +407,14 @@ header {
     background: var(--color-danger);
 }
 
-.cat-right .card1:nth-child(3) .category-icon {
-    background: var(--color-danger);
-}
-
 .cat-right .card2:nth-child(3) .category-icon {
     background: var(--color-success);
 }
+.cat-right .dang{
+    background: var(--color-danger);
+}
 
-.cat-right .card2:nth-child(1) .category-icon {
+.cat-right .succ{
     background: var(--color-success);
 }
 
@@ -473,15 +442,17 @@ header {
     background-color: transparent;
     color: rgb(128, 128, 253);
     font-size: 1rem;
-    padding: .6rem .8rem;
+    padding: .6rem .8rem !important;
+    padding-left: 0 ;
     font-weight: 400;
     border-radius: none;
     transition: var(--transition);
 }
 
 .cat-left .btn:hover {
-    background-color: white;
+    background-color: rgba(21, 28, 53,0.2);
     color: black;
+    color: lightyellow;
 }
 
 /*  POPULAR COURSES CSS */
@@ -515,7 +486,9 @@ header {
     transform: scale(1.15);
     background-color: var(--color-bg);
     border: 2px solid var(--color-success);
+    /* border: 2px solid white; */
     box-shadow: rgb(2, 135, 252) 3px 3px 6px 0px, rgba(250, 2, 242, 0.5) -3px -3px 6px 1px;
+    /* box-shadow: 3px 3px 10px black; */
 }
 
 .course .row .col {
@@ -528,7 +501,7 @@ header {
 
 @media only screen and (max-width:992px) {
     .cat-right .card {
-        width: 32rem;
+        width: 30rem;
         height: 14rem;
     }
 }
@@ -536,10 +509,9 @@ header {
 @media only screen and (max-width:530px) {
     .cat-right .card {
         width: 16rem;
-        height: 14rem;
+        height: 15rem;
     }
 }
-
 .review {
     height: 98vh;
     display: flex;
@@ -559,7 +531,6 @@ header {
 
 
 .text-light {
-    /* color: var(--color-light); */
     color: white;
 }
 
@@ -622,13 +593,7 @@ header {
 
 .swiper .profile span {
     color: var(--color-text);
-    /* color: white; */
     font-size: .8em;
-}
-
-.swiper .swiper-button-prev,
-.swiper-button-next {
-    /* color: var(--color-text); */
 }
 
 
@@ -640,11 +605,6 @@ header {
     .swiper {
         width: 25rem;
     }
-
-    .board>h1,
-    p {
-        padding: 0 2em;
-    }
 }
 
 @media screen and (max-width:390px) {
@@ -655,10 +615,9 @@ header {
     .swiper {
         width: 18rem;
     }
+}
 
-    .board>h1,
-    p {
-        /* font-size: .2rem; */
-        padding: 0 1.2rem;
-    }
+/* Footer */
+.bg-dark{
+    background:#151C35 !important;
 }
