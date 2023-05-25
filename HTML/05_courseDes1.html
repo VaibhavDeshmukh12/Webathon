@@ -56,18 +56,11 @@
             position: relative;
             z-index: 0;
             border-radius: 10px;
+            transition: all .3s;
         }
 
         .nav-link {
             width: 130px;
-        }
-
-        .dropdown li a {
-            color: black !important;
-        }
-
-        .dropdown-menu ul li {
-            background: rgb(246, 163, 246);
         }
 
         .navbar .btn {
@@ -80,61 +73,14 @@
             text-decoration: none;
         }
 
-        .glow-on-hover:before {
-            content: '';
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(5px);
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            animation: glowing 20s linear infinite;
-            opacity: 0;
-            transition: opacity .3s ease-in-out;
-            border-radius: 10px;
+
+        .glow-on-hover:hover,
+        .glow-on-hover a:hover {
+            text-decoration: underline;
+            transform: translateY(-5px);
+            background: none !important;
+            color: orange !important;
         }
-
-        .glow-on-hover:active {
-            color: #000
-        }
-
-        .glow-on-hover:active:after {
-            background: transparent;
-        }
-
-        .glow-on-hover:hover:before {
-            opacity: 1;
-        }
-
-        .glow-on-hover:after {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: #111;
-            left: 0;
-            top: 0;
-            border-radius: 10px;
-        }
-
-        @keyframes glowing {
-            0% {
-                background-position: 0 0;
-            }
-
-            50% {
-                background-position: 400% 0;
-            }
-
-            100% {
-                background-position: 0 0;
-            }
-        }
-
 
         .navbar-toggler {
             background-color: #fff;
@@ -172,7 +118,7 @@
         }
 
         @media screen and (max-width: 564px) {
-            .padd{
+            .padd {
                 padding: 0 0 !important;
             }
         }
@@ -215,14 +161,17 @@
     <div class="container course_des">
         <div class="row mt-2">
             <div class="col-md-12 d-flex justify-content-center align-items-center">
-                <img src="https://source.unsplash.com/random/1200x500/?graphic design" class="img-fluid" alt="" >
+                <img src="https://source.unsplash.com/random/1200x500/?graphic design" class="img-fluid" alt="">
             </div>
             <div class="padd" style="padding: 1rem 4rem;">
                 <div class="d-flex justify-content-between">
                     <span class="fs-2 text-warning" style="font-weight: bold;">Graphic Design Course</span>
                     <span class="fs-4 text-warning" style="font-weight: bold; padding-top:2px;">Cost: 299Rs</span>
                 </div>
-                <p class="mt-2 mx-3">This course is designed for beginners who want to learn the basics of graphic design. You will learn about the different elements of design, such as typography, color, and layout. You will also learn how to use Adobe Photoshop and Illustrator to create your own graphic designs.</p>
+                <p class="mt-2 mx-3">This course is designed for beginners who want to learn the basics of graphic
+                    design. You will learn about the different elements of design, such as typography, color, and
+                    layout. You will also learn how to use Adobe Photoshop and Illustrator to create your own graphic
+                    designs.</p>
             </div>
             <div class="row padd" style="padding: 1rem 4rem;">
                 <div class="col-md-6 col-xl-6 col-lg-6">
@@ -241,7 +190,9 @@
                     </ul>
                     <h3 class="text-warning">Certificate:</h3>
                     <ul>
-                        <li>Upon successful completion of this course, you will be awarded a certificate of completion. This certificate can be used to demonstrate your skills to potential employers or clients.</li>
+                        <li>Upon successful completion of this course, you will be awarded a certificate of completion.
+                            This certificate can be used to demonstrate your skills to potential employers or clients.
+                        </li>
                     </ul>
                 </div>
             </div>
